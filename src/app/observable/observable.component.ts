@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterModule, RouterOutlet } from "@angular/router";
 
 @Component({
   selector: 'app-observable',
-  imports: [],
+  imports: [RouterOutlet, RouterModule],
   templateUrl: './observable.component.html',
   styleUrl: './observable.component.scss',
 })
