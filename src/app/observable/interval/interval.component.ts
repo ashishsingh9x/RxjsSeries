@@ -15,8 +15,9 @@ export class IntervalComponent implements OnInit {
   videoSubscription!: Subscription;
 
   ngOnInit(): void {
-    const broadCastVideos = interval(1000);
-    
+    //const broadCastVideos = interval(1000);
+    // timer(delay, interval);
+    const broadCastVideos = timer(5000, 1000);
     this.videoSubscription = broadCastVideos.subscribe(res => {
       console.log(res);
       this.obsMessage = 'Videos ' + res;
