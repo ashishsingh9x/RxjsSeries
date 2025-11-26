@@ -5,9 +5,9 @@ import { Injectable } from '@angular/core';
 })
 export class DesignUtilityService {
   
-  print(countVal: any) {
+  print(countVal: any, elementId: string) {
     let el = document.createElement('li');
     el.innerText = countVal;
-    document.getElementById('elContainer')?.appendChild(el);
+    document.getElementById(elementId)?.appendChild(el);
   }
 }

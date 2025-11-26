@@ -18,7 +18,7 @@ export class FromEventComponent implements AfterViewInit {
     fromEvent(this.addBtn.nativeElement, 'click').subscribe(res => {
       let countVal = 'Video ' + count++
       console.log(countVal);
-      this.service.print(countVal);
+      this.service.print(countVal, 'elContainer');
     })
   }
 }

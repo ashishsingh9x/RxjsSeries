@@ -21,7 +21,7 @@ export class IntervalComponent implements OnInit {
     this.videoSubscription = broadCastVideos.subscribe(res => {
       console.log(res);
       this.obsMessage = 'Videos ' + res;
-      this.service.print(this.obsMessage);
+      this.service.print(this.obsMessage, 'elContainer');
 
       if (res >= 5) {
         this.videoSubscription.unsubscribe(); 
