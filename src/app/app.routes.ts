@@ -6,6 +6,7 @@ import { FromEventComponent } from './observable/from-event/from-event.component
 import { IntervalComponent } from './observable/interval/interval.component';
 import { OfFromComponent } from './observable/of-from/of-from.component';
 import { ToArrayComponent } from './observable/to-array/to-array.component';
+import { SubjectComponent } from './observable/subject/subject.component';
 
 export const routes: Routes = [
     { path: 'promise', component: PromiseComponent},
@@ -14,6 +15,8 @@ export const routes: Routes = [
         { path: 'fromEvent', component: FromEventComponent },
         { path: 'interval', component: IntervalComponent },
         { path: 'of-from', component: OfFromComponent },
-        { path: 'to-array', component: ToArrayComponent }
+        { path: 'to-array', component: ToArrayComponent },
+        { path: 'subject', component: SubjectComponent }
+
     ]},
 ];
