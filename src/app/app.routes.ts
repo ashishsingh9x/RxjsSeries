@@ -7,6 +7,7 @@ import { IntervalComponent } from './observable/interval/interval.component';
 import { OfFromComponent } from './observable/of-from/of-from.component';
 import { ToArrayComponent } from './observable/to-array/to-array.component';
 import { SubjectComponent } from './observable/subject/subject.component';
+import { PluckComponent } from './observable/pluck/pluck.component';
 
 export const routes: Routes = [
     { path: 'promise', component: PromiseComponent},
@@ -16,7 +17,7 @@ export const routes: Routes = [
         { path: 'interval', component: IntervalComponent },
         { path: 'of-from', component: OfFromComponent },
         { path: 'to-array', component: ToArrayComponent },
+        { path: 'pluck', component: PluckComponent },
         { path: 'subject', component: SubjectComponent }
-
     ]},
 ];
